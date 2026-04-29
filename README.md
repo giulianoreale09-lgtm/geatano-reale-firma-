@@ -1,102 +1,58 @@
 # Gaetano Reale Immobilien
 
-> Professionelle Immobilien-Website für Tübingen — Kaufen & Mieten.  
-> Gebaut mit reinem HTML, CSS und JavaScript. Keine Frameworks, keine Build-Tools.
+> Premium-Immobilienwebsite für Tübingen — Kaufen & Mieten.  
+> Reines HTML/CSS/JS. Keine Frameworks, keine Build-Tools. Einfach öffnen.
 
 ---
 
-## 🚀 Live starten
+## 🚀 Starten
 
-Einfach `index.html` im Browser öffnen — fertig.  
-Oder auf einen beliebigen Webserver / GitHub Pages hochladen.
+`index.html` im Browser öffnen — fertig.
 
-### GitHub Pages aktivieren
-1. Repository auf GitHub hochladen
-2. **Settings → Pages → Branch: `main` → Folder: `/ (root)`**
-3. Speichern → Die Seite ist live unter `https://[username].github.io/[repo-name]`
-
----
-
-## 📁 Projektstruktur
-
-```
-gaetano-reale/
-├── index.html          ← Komplette Website (HTML + CSS + JS in einer Datei)
-├── assets/
-│   └── images/         ← Eigene Bilder hier ablegen
-├── .gitignore
-├── LICENSE
-└── README.md
-```
+### GitHub Pages
+1. Repository hochladen
+2. **Settings → Pages → Branch: main → Save**
+3. Live unter `https://[username].github.io/[repo-name]`
 
 ---
 
-## 🔐 Admin-Zugang
+## 🔐 Admin-Login
 
-Das kleine Personen-Icon oben rechts in der Navigation öffnet den Login.
+Personen-Icon oben rechts in der Navigation.
 
-| Feld         | Wert            |
-|--------------|-----------------|
+| Feld | Wert |
+|------|------|
 | Benutzername | `Gaetano Reale` |
-| Passwort     | `170709`        |
+| Passwort | `170709` |
 
-> ⚠️ **Wichtig:** Das Passwort vor dem Live-Gang im Code ändern!  
-> Suche in `index.html` nach `'170709'` und ersetze es.
+> Passwort im Admin-Panel unter **Einstellungen → Passwort ändern** ändern.
 
 ---
 
 ## ✨ Features
 
-- **Intro-Animation** — Splash Screen mit Slide-in beim ersten Laden
-- **Apple-Style Design** — Reines Schwarz/Weiß, Playfair Display Serif
-- **GSAP Animationen** — Hero-Reveal, Parallax, Scroll-Trigger
-- **Objekte** — Kaufen & Mieten mit Filter-Tabs und Detail-Modal
-- **Admin-Dashboard** mit:
-  - Website-Bearbeitungsmodus (alle Texte direkt bearbeiten)
-  - Objekte erstellen / bearbeiten / löschen
-  - Bild-Upload (Drag & Drop)
-  - Kontaktdaten & Öffnungszeiten bearbeiten
-  - E-Mail-Weiterleitung einstellen
-- **Datenpersistenz** via `localStorage` (kein Server nötig)
-- **Vollständig responsiv** — Mobile, Tablet, Desktop
-
----
-
-## 🛠 Anpassen
-
-### Kontaktdaten ändern (ohne Admin)
-In `index.html` folgende Stellen suchen und ersetzen:
-
-```
-Otto-Erbe-Weg 38        → Ihre Adresse
-72072 Tübingen          → Ihre PLZ + Stadt
-+49 7071 00 00 00       → Ihre Telefonnummer
-info@reale-immobilien.de → Ihre E-Mail
-```
-
-### Eigene Bilder
-1. Bilder in `assets/images/` ablegen
-2. Im Admin-Dashboard unter „Objekt erstellen" den Pfad `assets/images/dateiname.jpg` eingeben
+- Intro-Splash-Animation
+- Apple-Style Design (Cormorant Garamond + DM Sans)
+- GSAP Animationen (Hero, Parallax, Scroll-Reveals)
+- Kaufen & Mieten Filter
+- Objekt-Detailansicht (Modal)
+- **Admin-Dashboard:**
+  - Alle Website-Texte inline bearbeiten
+  - Objekte erstellen / bearbeiten / löschen mit Bild-Upload
+  - Kontaktdaten & Öffnungszeiten ändern
+  - E-Mail-Weiterleitung konfigurieren
+  - Passwort ändern
+- localStorage Datenpersistenz (kein Server nötig)
+- Vollständig responsiv
 
 ---
 
 ## 📦 Abhängigkeiten (CDN)
 
-Keine lokale Installation nötig. Folgende Bibliotheken werden über CDN geladen:
-
-| Bibliothek | Version | Verwendung |
-|------------|---------|------------|
-| GSAP | 3.12.5 | Animationen |
-| GSAP ScrollTrigger | 3.12.5 | Scroll-Animationen |
-| Google Fonts | — | Playfair Display, DM Sans |
-
-> Für Offline-Betrieb: CDN-Links in `index.html` durch lokale Dateien ersetzen.
-
----
-
-## 📄 Lizenz
-
-MIT — frei verwendbar und anpassbar.
+| Bibliothek | Verwendung |
+|------------|------------|
+| GSAP 3.12.5 + ScrollTrigger | Animationen |
+| Google Fonts (Cormorant Garamond, DM Sans) | Typografie |
 
 ---
 
